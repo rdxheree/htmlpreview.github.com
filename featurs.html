@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyre Discord Bot - Feature List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px #d1d9e6, -10px -10px 20px #ffffff;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: #f9fbff;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lyre Discord Bot - Feature List</h1>
+
+        <div class="feature">
+            <h2>Overview</h2>
+            <p>Lyre is a feature-rich Discord bot created by Lyre Development, designed for server management with a focus on ticket systems, monitoring, and administration.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Core Features</h2>
+            <h3>1. Ticket System</h3>
+            <ul>
+                <li>Creates and manages support tickets</li>
+                <li>Ticket categories: General, Reward, Purchase, and Report</li>
+                <li>Ticket actions: Claim, Close, Alert</li>
+                <li>Automatic ticket transcripts</li>
+                <li>Ticket activity tracking</li>
+                <li>Ticket inactivity monitoring</li>
+            </ul>
+
+            <h3>2. Command System</h3>
+            <ul>
+                <li>Uses Discord slash commands for easy interaction</li>
+                <li>Command permissions management via Discord's permission system</li>
+                <li>Automatic command registration with Discord API</li>
+            </ul>
+
+            <h3>3. Invite Tracking</h3>
+            <ul>
+                <li>Monitors who invited users to the server</li>
+                <li>Tracks invite usage statistics</li>
+            </ul>
+
+            <h3>4. User Leveling System</h3>
+            <ul>
+                <li>Tracks user activity and assigns levels</li>
+                <li>Stores user progression data</li>
+            </ul>
+
+            <h3>5. Web Dashboard</h3>
+            <ul>
+                <li>Web interface for managing bot settings</li>
+                <li>Remote monitoring capabilities</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+            <h2>Commands List</h2>
+            <h3>General Commands</h3>
+            <ul>
+                <li><b>/ping</b> - Checks the bot's latency and uptime (Anyone can use)</li>
+            </ul>
+
+            <h3>Giveaway Commands</h3>
+            <ul>
+                <li><b>/gend</b> - Ends a giveaway (Requires admin/moderator permissions)</li>
+            </ul>
+
+            <h3>Ticket Management</h3>
+            <ul>
+                <li>Various ticket-related commands for creating, managing, and closing tickets</li>
+                <li>Most ticket commands require specific staff roles</li>
+            </ul>
+
+            <h3>Moderation Commands</h3>
+            <ul>
+                <li>Commands for managing users and server content (Requires moderator/admin permissions)</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+            <h2>Permission System</h2>
+            <p>The bot uses Discord's built-in permission system:</p>
+            <ul>
+                <li>Commands have permission requirements defined in their construction</li>
+                <li>Example: Admin-only commands use <b>PermissionFlagsBits.Administrator</b></li>
+                <li>Moderator commands typically require <b>PermissionFlagsBits.ManageMessages</b> or similar</li>
+                <li>Ticket management often requires specific roles that can be configured</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+            <h2>Technical Features</h2>
+            <ul>
+                <li>Written in Node.js using Discord.js library</li>
+                <li>Real-time status monitoring and dynamic presence updates</li>
+                <li>Hot reloading of commands in development mode</li>
+                <li>Comprehensive logging system</li>
+                <li>Uses embedded database for ticket and user information</li>
+                <li>Custom emoji support for rich visual feedback</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+            <h2>Setup Requirements</h2>
+            <ul>
+                <li>Discord Bot Token</li>
+                <li>Server with Node.js</li>
+                <li>Appropriate bot permissions in Discord</li>
+            </ul>
+        </div>
+
+        <p class="footer">Made with ❤️ by Lyre Development</p>
+    </div>
+
+</body>
+</html>
